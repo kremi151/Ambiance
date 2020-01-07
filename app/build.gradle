@@ -1,13 +1,17 @@
 apply plugin: 'com.android.application'
 
+repositories {
+    google()
+    jcenter()
+}
+
 android {
-    compileSdkVersion 19
-    buildToolsVersion "28.0.3"
+    compileSdkVersion 28
 
     defaultConfig {
         applicationId "lu.kremi151.ambiance"
         minSdkVersion 14
-        targetSdkVersion 19
+        targetSdkVersion 28
     }
 
     buildTypes {
@@ -19,5 +23,5 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:19.1.0'
+    implementation 'com.android.support:drawerlayout:28.0.0'
 }
